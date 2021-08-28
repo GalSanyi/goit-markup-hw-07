@@ -532,29 +532,30 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-icon" data-modal-close>
+        <button type="button" class="modal__close-icon" data-modal-close>
           <svg class="close-link" width="11" height="11">
             <use href="./images/symbol-defs3.svg#icon-close"></use>
           </svg>
         </button>
+
         <form class="backdrop-form">
         
-          <h2 class="group-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <h2 class="backdrop-form__title">Оставьте свои данные, мы вам перезвоним</h2>
           <div class="form-field">
-            <label class="form-field-lable"  for="username">Имя</label>
-           <div class="form-icon">
-            <input class="form-input" type="text" name="username" id="username" />
-            <svg class="icon" width="12" height="12">
+            <label class="form-field__lable"  for="username">Имя</label>
+           <div class="modal-form">
+            <input class="modal-form__input" type="text" name="username" id="username" />
+            <svg class="modal-form__icon" width="12" height="12">
               <use href="./images/symbol-defs3.svg#icon-name"></use>
              </svg>
            </div>
           </div>
 
           <div class="form-field">
-            <label class="form-field-lable" for="tel">Телефон</label>
-           <div class="form-icon">
-            <input class="form-input" type="tel" name="tel" id="tel" />
-            <svg class="icon" width="13" height="13">
+            <label class="form-field__lable" for="tel">Телефон</label>
+           <div class="modal-form">
+            <input class="modal-form__input" type="tel" name="tel" id="tel" />
+            <svg class="modal-form__icon" width="13" height="13">
               <use href="./images/symbol-defs3.svg#icon-phone"></use>
              </svg>
            </div>
@@ -562,15 +563,16 @@
 
           <div class="form-field">
             <label class="form-field-lable" for="mail">Почта  </label>
-           <div class="form-icon">
-            <input type="email" class="form-input"  name="mail" id="mail" />
-            <svg class="icon" width="15" height="12">
+           <div class="modal-form">
+            <input type="email" class="modal-form__input"  name="mail" id="mail" />
+            <svg class="modal-form__icon" width="15" height="12">
              <use href="./images/symbol-defs3.svg#icon-email"></use>
             </svg>
            </div>
 
           </div>
-          <div class="form-field form-textarea ">
+
+          <div class="form-field form-field--textarea">
             <label class="form-field-lable"  for="comment">Комментарий</label>
             <textarea
               name="comment"
@@ -581,19 +583,19 @@
             ></textarea>
           </div>
 
-          <div class="checkbox-labele">
-           <label class="lable">
-            <input class="checkbox" type="checkbox" name="check" value="check" id="check" />
-            <span class="icon-check"></span>
+          <div class="checkbox">
+           <label class="checkbox__lable">
+            <input class="checkbox__input" type="checkbox" name="check" value="check" id="check" />
+            <span class="checkbox__icon"></span>
            </label>
-            <label for="check" class="check-text"
+            <label for="check" class="checkbox__text"
               >Соглашаюсь с рассылкой и принимаю
-              <a class="check-label-text" href="#">Условия договора</a>
+              <a class="checkbox__link" href="#">Условия договора</a>
             </label>
           </div>
 
-          <div class="form-btn">
-            <button type="submit" class="form-btn-text">Отправить</button>
+          <div class="checkbox-button">
+            <button type="submit" class="checkbox-button__text">Отправить</button>
           </div>
           
         
