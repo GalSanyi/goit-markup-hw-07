@@ -85,27 +85,29 @@
     align-items: center;
     justify-content: center;
     transition: background-color 250ms $timing-function;
+    &:hover .footer-social__icon,
+    &:focus .footer-social__icon {
+      fill: $white-color;
+    }
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    
   }
-  .footer-social__link:hover .footer-social__icon,
-  .footer-social__link:focus .footer-social__icon {
-    fill: $white-color;
-  }
-  .footer-social__link:hover,
-  .footer-social__link:focus {
-    background-color: $accent-color;
-  }
-  .footer-social__link:last-child {
-    margin-right: 0;
-  }
+ 
+ 
+  
   .footer-social__icon {
     fill: $white-color;
   }
   
   
   
-  .footer-social__link:last-child {
-    margin-right: 0;
-  }
+ 
   
   
   

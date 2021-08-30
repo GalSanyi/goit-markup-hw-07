@@ -47,10 +47,11 @@
   }
   .section-content__item {
     margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
-  .section-content__item:last-child {
-    margin-right: 0;
-  }
+  
   
   .section--text {
     color: $primery-text-color;

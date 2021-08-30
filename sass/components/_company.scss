@@ -38,10 +38,24 @@
     box-sizing: border-box;
     border-radius: 4px;
     transition: border 250ms $timing-function;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover .company-box__icon,
+    &:focus .company-box__icon {
+      fill: $accent-color;
+    }
+    &:hover .company-box__icon,
+    &:focus .company-box__icon {
+      fill: $accent-color;
+    }
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+    }
   }
-  .company-box__link:last-child {
-    margin-right: 0;
-  }
+ 
   .company-box__list:last-child {
     margin-right: 0;
   }
@@ -49,11 +63,4 @@
     fill: #afb1b8;
     transition: fill 250ms $timing-function;
   }
-  .company-box__link:hover .company-box__icon,
-  .company-box__link:focus .company-box__icon {
-    fill: $accent-color;
-  }
-  .company-box__link:hover,
-  .company-box__link:focus {
-    border: 1px solid #2196f3;
-  }
+ 

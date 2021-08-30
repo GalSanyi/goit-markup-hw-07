@@ -77,8 +77,8 @@
   .menu__link--activ {
     position: relative;
     display: block;
-  }
-  .menu__link--activ::after {
+  
+  &::after {
     content: "";
     position: absolute;
     left: 0;
@@ -92,6 +92,7 @@
   
     transition: opacity 250ms $timing-function;
   }
+  }
   .menu__link:hover::after,
   .menu__link:focus::after {
     opacity: 1;
@@ -100,6 +101,7 @@
   .menu__link:hover,
   .menu__link:focus {
     color: $accent-color;
+    
   }
   
   /* list link */
@@ -112,6 +114,14 @@
     display: flex;
     margin-left: auto;
     padding: 0;
+    & a {
+      color: $title-text-color;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+    }
   }
   .list-link__item {
     margin-left: auto;
@@ -119,18 +129,8 @@
     align-items: center;
   }
   
-  .list-link a {
-    color: $title-text-color;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-  }
-  .list-link__button:hover,
-  .list-link__button:focus {
-    color: $accent-color;
-  }
+  
+ 
   .list-link__button:hover svg,
   .list-link__button:focus svg {
     fill: $accent-color;
@@ -148,19 +148,24 @@
     transition: fill 250ms $timing-function;
   }
   
-  .list-link__button:hover .list-linc__icon {
-    fill: $accent-color;
-  }
-  .list-link__button:hover .list-link__contact {
-    fill: $accent-color;
-  }
-  
-  .list-link__button {
-    display: flex;
-    align-items: center;
-    transition: color 250ms $timing-function;
-  }
+ 
+ 
   
   .list-link__button {
     margin-left: 50px;
+    display: flex;
+    align-items: center;
+    transition: color 250ms $timing-function;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+    &:hover .list-link__contact {
+      fill: $accent-color;
+    }
+    &:hover .list-linc__icon {
+      fill: $accent-color;
+    }
   }
+  
+ 

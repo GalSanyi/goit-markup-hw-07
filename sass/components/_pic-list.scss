@@ -19,21 +19,27 @@
     display: block;
     text-decoration: none;
     transition: box-shadow 250ms $timing-function;
-  }
-  
-  .pic-list__link:hover,
-  .pic-list__link:focus {
+    &:hover,
+  &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+  &:hover .thumb-section,
+  &:focus .thumb-section {
+    transform: translateY(0);
+  }
+  }
+  
+  
   .thumb-pic {
     position: relative;
     overflow: hidden;
+    &::before {
+      display: inline-block;
+    }
   }
   
-  .thumb-pic::before {
-    display: inline-block;
-  }
+  
   
   .thumb-section {
     transform: translateY(100%);
@@ -61,10 +67,7 @@
     color: $white-color;
   }
   
-  .pic-list__link:hover .thumb-section,
-  .pic-list__link:focus .thumb-section {
-    transform: translateY(0);
-  }
+ 
   
   .thumb-paragraph {
     border-right: 1px solid $border-text;

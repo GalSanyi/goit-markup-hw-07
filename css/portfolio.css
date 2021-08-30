@@ -111,7 +111,6 @@ li {
   position: relative;
   display: block;
 }
-
 .menu__link--activ::after {
   content: "";
   position: absolute;
@@ -150,17 +149,6 @@ li {
   margin-left: auto;
   padding: 0;
 }
-
-.list-link__item {
-  margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .list-link a {
   color: #757575;
   text-decoration: none;
@@ -170,9 +158,14 @@ li {
   letter-spacing: 0.02em;
 }
 
-.list-link__button:hover,
-.list-link__button:focus {
-  color: #2196f3;
+.list-link__item {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .list-link__button:hover svg,
@@ -196,15 +189,8 @@ li {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-link__button:hover .list-linc__icon {
-  fill: #2196f3;
-}
-
-.list-link__button:hover .list-link__contact {
-  fill: #2196f3;
-}
-
 .list-link__button {
+  margin-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,9 +201,14 @@ li {
   -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.list-link__button {
-  margin-left: 50px;
+.list-link__button:hover, .list-link__button:focus {
+  color: #2196f3;
+}
+.list-link__button:hover .list-link__contact {
+  fill: #2196f3;
+}
+.list-link__button:hover .list-linc__icon {
+  fill: #2196f3;
 }
 
 /* PORTFOLIO DECORATION */
@@ -266,9 +257,7 @@ li {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.section-pic__button:hover,
-.section-pic__button:focus {
+.section-pic__button:hover, .section-pic__button:focus {
   background-color: #2196f3;
   color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -304,18 +293,20 @@ li {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.pic-list__link:hover,
-.pic-list__link:focus {
+.pic-list__link:hover, .pic-list__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.pic-list__link:hover .thumb-section, .pic-list__link:focus .thumb-section {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .thumb-pic {
   position: relative;
   overflow: hidden;
 }
-
 .thumb-pic::before {
   display: inline-block;
 }
@@ -348,13 +339,6 @@ li {
   line-height: 28px;
   letter-spacing: 0.03em;
   color: #ffffff;
-}
-
-.pic-list__link:hover .thumb-section,
-.pic-list__link:focus .thumb-section {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .thumb-paragraph {
@@ -484,27 +468,18 @@ li {
   -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-social__link:hover .footer-social__icon,
-.footer-social__link:focus .footer-social__icon {
+.footer-social__link:hover .footer-social__icon, .footer-social__link:focus .footer-social__icon {
   fill: #ffffff;
 }
-
-.footer-social__link:hover,
-.footer-social__link:focus {
+.footer-social__link:hover, .footer-social__link:focus {
   background-color: #2196f3;
 }
-
 .footer-social__link:last-child {
   margin-right: 0;
 }
 
 .footer-social__icon {
   fill: #ffffff;
-}
-
-.footer-social__link:last-child {
-  margin-right: 0;
 }
 
 /* ****************************

@@ -15,10 +15,11 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
-  .section-team__item:last-child {
-    margin-right: 0;
-  }
+  
   
   .people-list {
     padding-top: 30px;
@@ -68,18 +69,21 @@
     align-items: center;
     justify-content: center;
     transition: background-color 250ms $timing-function;
+  &:hover .social-box__icon,
+  &:focus .social-box__icon {
+      fill: $white-color;
+    }
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
-  .social-box__link:hover .social-box__icon,
-  .social-box__link:focus .social-box__icon {
-    fill: $white-color;
-  }
-  .social-box__link:hover,
-  .social-box__link:focus {
-    background-color: $accent-color;
-  }
-  .social-box__link:last-child {
-    margin-right: 0;
-  }
+ 
+ 
+ 
   .social-box__icon {
     fill: #afb1b8;
     transition: fill 250ms $timing-function;

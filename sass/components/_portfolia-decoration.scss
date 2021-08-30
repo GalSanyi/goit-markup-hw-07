@@ -36,13 +36,14 @@
     cursor: pointer;
     transition: background 250ms $timing-function,
       color 250ms $timing-function, box-shadow 250ms $timing-function;
+      &:hover,
+      &:focus {
+        background-color: $accent-color;
+        color: $white-color;
+        box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+          0px 2px 2px rgb(0 0 0 / 12%);
+      }
   }
   
-  .section-pic__button:hover,
-  .section-pic__button:focus {
-    background-color: $accent-color;
-    color: $white-color;
-    box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
-      0px 2px 2px rgb(0 0 0 / 12%);
-  }
+
   
